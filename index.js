@@ -60,7 +60,7 @@ if(process.env.NODE_ENV === "production") {
 
 app.use(errorMiddleware)
 
-const PORT =process.env.PORT || 4005
+const PORT =process.env.PORT || 8000
 
 
 const server = app.listen(PORT, () => {
