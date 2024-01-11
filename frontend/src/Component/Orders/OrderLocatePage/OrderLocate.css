@@ -1,0 +1,422 @@
+.locate-order-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.user-detail {
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+    padding: 20px;
+    min-height: 30vh;
+    height: max-content;
+    margin: 50px 50px 0 50px;
+    border: 3px solid rgb(214, 210, 210);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.product-detail {
+    display: flex;
+    gap: 50px;
+    width: 70vw;
+    padding: 20px;
+    min-height: 35vh;
+    height: max-content;
+    position: relative;
+    margin: 20px 50px;
+    border: 3px solid rgb(214, 210, 210);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.product-image {
+    height: 100%;
+    margin: 40px 0px 20px 0px;
+
+    >img {
+        width: 150px;
+        min-height: 130px;
+        max-height: 18vh;
+    }
+}
+
+.product-info {
+
+    >h5:hover {
+        color: blue;
+        cursor: pointer;
+    }
+}
+
+.reorder-btn {
+    margin: 50px;
+    width: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background: greenyellow;
+    color: blue;
+
+}
+
+@media (max-width:990px) and (min-width:770px) {
+    .user-address {
+        >h3 {
+            font-size: 20px;
+        }
+
+        >h4 {
+            font-size: 18px;
+        }
+
+        >h6 {
+            font-size: 16px;
+        }
+    }
+
+    .payment-detail {
+        >h3 {
+            font-size: 20px;
+        }
+
+        >h5 {
+            font-size: 16px;
+        }
+    }
+
+    .order-summery-class {
+        >h3 {
+            font-size: 20px;
+        }
+
+        >h6 {
+            font-size: 14px;
+        }
+
+        >h5 {
+            font-size: 16px;
+        }
+    }
+
+    .product-info {
+        >h4 {
+            font-size: 18px;
+        }
+
+        >h5 {
+            font-size: 16px;
+        }
+    }
+    .reorder-btn {
+        margin: 40px;
+        width: 120px;
+        border-radius: 5px;
+        padding: 7px;
+        font-size: 16px;
+        background: greenyellow;
+        color: blue;
+    
+    }
+    .product-image {
+        height: 100%;
+        margin: 30px 0px 18px 0px;
+    
+        >img {
+            width: 130px;
+            min-height: 100px;
+            max-height: 16vh;
+        }
+    }
+}
+
+
+@media (max-width:770px) and (min-width:600px) {
+    .user-address {
+        >h3 {
+            font-size: 15px;
+        }
+
+        >h4 {
+            font-size: 13px;
+        }
+
+        >h6 {
+            font-size: 12px;
+        }
+    }
+
+    .payment-detail {
+        >h3 {
+            font-size: 15px;
+        }
+
+        >h5 {
+            font-size: 12px;
+        }
+    }
+
+    .order-summery-class {
+        >h3 {
+            font-size: 15px;
+        }
+
+        >h6 {
+            font-size: 10px;
+        }
+
+        >h5 {
+            font-size: 12px;
+        }
+    }
+
+    .product-info {
+        >h4 {
+            font-size: 13px;
+        }
+
+        >h5 {
+            font-size: 12px;
+        }
+    }
+    .reorder-btn {
+        margin: 30px;
+        width: 100px;
+        border-radius: 5px;
+        padding: 4px;
+        font-size: 14px;
+        background: greenyellow;
+        color: blue;
+    
+    }
+    .product-image {
+        height: 100%;
+        margin: 20px 0px 16px 0px;
+    
+        >img {
+            width: 110px;
+            min-height: 80px;
+            max-height: 14vh;
+        }
+    }
+}
+
+@media (max-width:600px) and (min-width:200px) {
+    .user-detail {
+        display: flex;
+        justify-content: space-around;
+        width: 85vw;
+        padding: 10px;
+        min-height: 30vh;
+        height: max-content;
+        margin: 20px 20px 0 20px;
+        border: 3px solid rgb(214, 210, 210);
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: beige;
+    }
+
+    .user-address {
+        >h3 {
+            font-size: 15px;
+            color: chocolate;
+        }
+
+        >h4 {
+            font-size: 13px;
+        }
+
+        >h6 {
+            font-size: 12px;
+        }
+    }
+
+    .payment-detail {
+        >h3 {
+            font-size: 15px;
+            color: chocolate;
+        }
+
+        >h5 {
+            font-size: 12px;
+        }
+    }
+
+    .order-summery-class {
+        >h3 {
+            font-size: 15px;
+            color: chocolate;
+        }
+
+        >h6 {
+            font-size: 10px;
+        }
+
+        >h5 {
+            font-size: 12px;
+        }
+    }
+    .product-detail {
+        display: flex;
+        gap: 30px;
+        width: 85vw;
+        padding: 10px;
+        min-height: 35vh;
+        height: max-content;
+        position: relative;
+        margin: 20px 20px;
+        color: beige;
+    }
+    .product-image {
+        height: 100%;
+        margin: 10px 0px 14px 0px;
+    
+        >img {
+            width: 90px;
+            min-height: 70px;
+            max-height: 12vh;
+        }
+    }
+    .product-info {
+        >h4 {
+            font-size: 13px;
+        }
+
+        >h5 {
+            font-size: 12px;
+        }
+    }
+    .reorder-btn {
+        margin: 30px;
+        width: 100px;
+        border-radius: 5px;
+        padding: 4px;
+        font-size: 14px;
+        background: greenyellow;
+        color: blue;
+    
+    }
+}
+
+@media (max-width:470px) and (min-width:200px) {
+    .user-address {
+        >h3 {
+            font-size: 12px;
+        }
+
+        >h4 {
+            font-size: 10px;
+        }
+
+        >h6 {
+            font-size: 8px;
+        }
+    }
+
+    .payment-detail {
+        >h3 {
+            font-size: 12px;
+        }
+
+        >h5 {
+            font-size: 10px;
+        }
+    }
+
+    .order-summery-class {
+        >h3 {
+            font-size: 12px;
+        }
+
+        >h6 {
+            font-size: 8px;
+        }
+
+        >h5 {
+            font-size: 10px;
+        }
+    }
+    .product-detail {
+                gap: 20px;
+        
+    }
+    .product-info {
+        >h4 {
+            font-size: 10px;
+        }
+
+        >h5 {
+            font-size: 10px;
+        }
+    }
+    .reorder-btn {
+        margin: 20px;
+        width: 90px;
+        padding: 3px;
+        font-size: 12px;
+        
+    }
+}
+
+@media (max-width:380px) and (min-width:200px) {
+    .user-address {
+        >h3 {
+            font-size: 9px;
+        }
+
+        >h4 {
+            font-size: 7px;
+        }
+
+        >h6 {
+            font-size: 5px;
+        }
+    }
+
+    .payment-detail {
+        >h3 {
+            font-size: 9px;
+        }
+
+        >h5 {
+            font-size: 7px;
+        }
+    }
+
+    .order-summery-class {
+        >h3 {
+            font-size: 9px;
+        }
+
+        >h6 {
+            font-size: 5px;
+        }
+
+        >h5 {
+            font-size: 7px;
+        }
+    }
+    .product-detail {
+        gap: 10px;
+
+}
+.product-info {
+>h4 {
+    font-size: 7px;
+}
+
+>h5 {
+    font-size: 8px;
+}
+}
+.reorder-btn {
+margin: 10px;
+width: 80px;
+padding: 2px;
+font-size: 10px;
+
+}
+}

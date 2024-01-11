@@ -1,0 +1,17 @@
+
+.category-type-container{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.type-name{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #0000ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.type-row{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+}

@@ -1,0 +1,102 @@
+.create-container{
+    min-height: 100vh;
+    height: max-content;
+    width: max-content;
+    min-width: 70vw;
+    box-sizing: border-box;
+    
+}
+.create-box{
+    min-width: 50vw;
+    width: max-content;
+    margin: 20px 230px;
+    min-height:100vh;
+    box-sizing: border-box;
+    height: max-content;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   border-radius: 5px;
+   
+}
+.create-head{
+    text-align: center;
+    padding-top: 20px;
+}
+.create-form-group{
+    display: flex;
+    flex-direction: column;
+    >label{
+        font-size: 20px;
+        padding-left: 100px;
+    }
+    >input,textarea,select{
+        height: 50px;
+        width: 40vw;
+        margin-left: 6vw;
+        
+    }
+}
+.custom-file{
+    width: 40vw;
+    margin-left: 6vw;
+}
+.create-img{
+    display: flex;
+    margin-left: 8vw;
+   
+}
+.create-btn{
+    background: rgb(3, 133, 255);
+    width: 230px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 18vw;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 8px;
+}
+.create-btn:hover{
+    font-size: 20px;
+    font-weight: 500;
+}
+.creating-images{
+    width: 70px;
+    height: 70px;
+}
+
+@media (min-width:2560px) {
+    .custom-file{
+        font-size: 40px;
+        >label{
+            width: 40vw;
+            margin-left: 1vw;
+            height: 100px;
+          >h3{
+            font-size: 40px;
+          }
+        }
+      
+    }
+    .create-img{
+        display: flex;
+        margin-left: 8vw;
+        margin-top: 20px;
+       
+    }
+    .creating-images{
+        width: 140px;
+        height: 140px;
+    }
+    
+}
+@media (max-width:600px) and (min-width:200px){
+    .create-container{
+        max-height: 80vh;
+        width: max-content;
+        min-width: 70vw;
+        box-sizing: border-box;
+        
+    }
+  }

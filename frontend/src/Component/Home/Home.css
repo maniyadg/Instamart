@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+.container{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin:1rem;
+    gap: 15px;
+}
+
+.card{
+    background-color:rgb(255, 255, 255);
+    max-height:20rem;
+    flex: 0 0 40%;
+    min-width:36rem;
+    margin: 1rem 0rem;
+    border: none;
+    box-shadow: 3px 5px 5px 2px rgb(207, 207, 207);
+    cursor: pointer;
+   
+}
+
+.profile-card{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 5px;
+    
+}
+
+.user-info{
+    display:flex;
+    margin-top: 10px;
+    >img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50% solid black;
+    }
+   
+}
+
+.name{
+    padding: 1px;
+    margin-left: 180px;
+    margin-top: auto;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #c04000;
+
+}
+
+
+.button{
+    background: #eca0ff;
+    width: 70px;
+    height: min-content;
+    border-style: hidden;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #f7f4f4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.like-btn{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    margin-right: 30px;
+    >div{
+        >p{
+            >i{
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+    }
+    >div{
+        >i{
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    >img{
+        width: 150px;
+        height: 200px;
+        margin-left: 14px;
+    }
+   
+}
+
+.pro-name{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 7px;
+    font-weight: 600;
+   
+}
+
+.ratings{
+    font-size: 15px;
+    color: limegreen;
+    margin-left: 13px;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 13px;
+}
+
+.stock{
+    font-size: 15px;
+    margin-left: 13px;
+    color: limegreen;
+}
+
+
+
+hr{
+    height: 1px;
+    background-color: darkslategray;
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    border: none;
+}
+.reel-type-category{
+   display: none;
+   
+}
+.category-reel{
+    height: 9rem;
+    width: 9rem;
+    outline: 2px solid rgb(236, 223, 223);
+    background: rgb(248, 247, 248);
+    border-radius: 50%;
+    margin: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    >img{
+        width: 100px;
+        height: 100px;
+       border-radius: 50%;
+    }
+    >p{
+        font-weight: 500;
+        font-size: 17px;
+        text-transform: capitalize;
+    }
+}
+
+
+@media (max-width:1250px) and (min-width : 600px) {
+
+    .card{
+        background-color:rgb(255, 255, 255);
+        max-height:15rem;
+        min-width:32rem;
+        margin-top: 1rem 0rem;
+        border: none;
+        box-shadow: 3px 5px 5px 2px rgb(207, 207, 207);
+        cursor: pointer;
+    }
+    
+    
+    .user-info{
+        display:flex;
+        margin-top: 3px;
+        >img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+       
+    }
+    .name{
+        padding: 5px;
+        margin-left: 10px;
+        margin-top: auto;
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+    .button{
+        background: linear-gradient(#84ffc9,#aab2ff,#eca0ff);
+        width: 50px;
+        height: 5vh;
+        border-style: hidden;
+        border-radius: 10px;
+        margin-top: 15px;
+        font-size: 9px;
+    }
+    .product{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    
+        >img{
+            width: 150px;
+            height: 90px;
+            margin-left: 4px;
+        }
+       
+    }
+    .pro-name{
+        font-size: 10px;
+        margin-left: 13px;
+        margin-top: 2px;
+        font-weight: 600;
+    }
+    .ratings{
+        font-size: 8px;
+       
+    } 
+    .price{
+        font-size: 10px;
+    }  
+    .stock{
+        font-size: 8px;
+    }
+   .product-divider{
+    min-width: 30vw;
+    width: max-content;
+   }
+   .profile-divider{
+    min-width: 40vw;
+    width: max-content;
+   }
+    
+    }
+
+    @media (max-width:700px) and (min-width : 600px) {
+        .card{
+            background-color:rgb(255, 255, 255);
+            max-height:15rem;
+            min-width:28rem;
+            margin-top: 1rem 0rem;
+            border: none;
+            box-shadow: 3px 5px 5px 2px rgb(207, 207, 207);
+            cursor: pointer;
+        }
+    }
+
+
+    /* Mobile Css */
+    @media (max-width:600px) and (min-width:200px){
+        .container{
+            height: 80vh;
+            margin: 0px;
+            background: #354376;
+        }
+        .reel-type-category{
+            display: block;
+            display: flex;
+           flex-flow: row;
+           
+        }
+        .category-reel{
+            
+            height: 4rem;
+            width: 4rem;
+            outline: 2px solid rgb(236, 223, 223);
+            background: rgb(248, 247, 248);
+            border-radius: 50%;
+            margin: 10px 15px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: center;
+            padding: 5px;
+            >img{
+                width: 30px;
+                height: 30px;
+               border-radius: 50%;
+            }
+            >p{
+                
+                font-size: 10px;
+                text-transform: capitalize;
+            }
+        }
+        
+        .card{
+            background-color:rgb(255, 255, 255);
+            min-height:12rem;
+            flex: 0 0 40%;
+            min-width:28rem;
+            margin: 6px -6px;
+            border: none;
+            box-shadow: 3px 5px 5px 2px rgb(207, 207, 207);
+            cursor: pointer;
+            
+           
+        }
+          
+    .user-info{
+        display:flex;
+        margin-top: 1px;
+        >img{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+    }
+
+    .name{
+        padding: 1px;
+        margin-left: 5px;
+        margin-top: auto;
+        font-size: 14px;
+     }
+
+    .product{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    
+        >img{
+            width: 130px;
+            height: 130px;
+            margin-left: 15px;
+        }
+       
+    }
+    .pro-name{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 2px;
+        font-weight: 600;
+        text-overflow: ellipsis;
+    }
+    .ratings{
+        display: none;
+        font-size: 8px;
+       
+    } 
+    .price{
+        font-size: 18px;
+    }  
+    .stock{
+        font-size: 8px;
+    }
+   .product-divider{
+    
+    display: none;
+   }
+   .profile-divider{
+    min-width: 85vw;
+    width: max-content;
+   }
+   .button{
+    background-color: #0cf;
+    width: 50px;
+    height: min-content;
+    border-style: hidden;
+    border-radius: 10px;
+    margin-top: 8px;
+    font-size: 10px;
+    margin-right: 20px;
+}
+    }
+
+    @media (max-width:485px) and (min-width:300px){
+        .card{
+            background-color:rgb(255, 255, 255);
+            min-height:10rem;
+            height: max-content;
+            flex: 0 0 40%;
+            min-width:23rem;
+            margin: 10px 0px;
+            border: none;
+            box-shadow: 3px 5px 5px 2px rgb(207, 207, 207);
+            cursor: pointer;
+            
+           
+        }
+        .category-reel{
+            
+            height: 4rem;
+            width: 4rem;
+            outline: 2px solid rgb(236, 223, 223);
+            background: rgb(248, 247, 248);
+            border-radius: 50%;
+            margin: 10px 8px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: center;
+            padding: 5px;
+            >img{
+                width: 30px;
+                height: 30px;
+               border-radius: 50%;
+            }
+            >p{
+                
+                font-size: 10px;
+                text-transform: capitalize;
+            }
+        }
+        .profile-divider{
+            min-width: 75vw;
+            width: max-content;
+           }
+    }
+    @media (max-width:420px) and (min-width:350px){
+        .card{
+            background-color:rgb(255, 255, 255);
+            min-height:10rem;
+            height: max-content;
+            flex: 0 0 40%;
+            min-width:19rem;
+            margin: 10px 0px;
+            border: none;
+            box-shadow: 3px 5px 5px 2px rgb(207, 207, 207);
+            cursor: pointer;
+            
+           
+        }
+        .category-reel{
+            
+            height: 3rem;
+            width: 3rem;
+            outline: 2px solid rgb(236, 223, 223);
+            background: rgb(248, 247, 248);
+            border-radius: 50%;
+            margin: 10px 6px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: center;
+            padding: 5px;
+            >img{
+                width: 25px;
+                height: 25px;
+               border-radius: 50%;
+            }
+            >p{
+                
+                font-size: 7px;
+                text-transform: capitalize;
+            }
+        }
+        .profile-divider{
+            min-width: 65vw;
+            width: max-content;
+           }
+    }
+
+    @media (max-width:350px) and (min-width:250px){
+        .card{
+            background-color:rgb(255, 255, 255);
+            min-height:10rem;
+            height: max-content;
+            flex: 0 0 40%;
+            min-width:15rem;
+            margin: 10px 0px;
+            border: none;
+            box-shadow: 3px 5px 5px 2px rgb(207, 207, 207);
+            cursor: pointer;
+            
+           
+        }
+        .price{
+            font-size: 14px;
+        }  
+        .pro-name{
+            font-size: 12px;
+            margin-left: 13px;
+            margin-top: 2px;
+            font-weight: 600;
+        }
+        .fa-heart{
+            font-size: 12px;
+        }
+        .like-no{
+            font-size: 12px;
+        }
+        .category-reel{
+            
+            height: 3rem;
+            width: 3rem;
+            outline: 2px solid rgb(236, 223, 223);
+            background: rgb(248, 247, 248);
+            border-radius: 50%;
+            margin: 10px 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: center;
+            padding: 5px;
+            
+            >img{
+                width: 25px;
+                height: 25px;
+               border-radius: 50%;
+            }
+            >p{
+                
+                font-size: 7px;
+                text-transform: capitalize;
+            }
+        }
+        .profile-divider{
+            min-width: 65vw;
+            width: max-content;
+           }
+    }
+    @media (max-width:300px) and (min-width:200px){
+       
+        .category-reel{
+            
+            height: 2.5rem;
+            width: 2.5rem;
+            outline: 2px solid rgb(236, 223, 223);
+            background: rgb(248, 247, 248);
+            border-radius: 50%;
+            margin: 10px 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: center;
+            padding: 5px;
+            >img{
+                width: 25px;
+                height: 25px;
+               border-radius: 50%;
+            }
+            >p{
+                
+                font-size: 7px;
+                text-transform: capitalize;
+            }
+        }
+        .profile-divider{
+            min-width: 75vw;
+            width: max-content;
+           }
+    }

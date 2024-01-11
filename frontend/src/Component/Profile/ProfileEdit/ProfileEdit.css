@@ -1,0 +1,224 @@
+.profile-details-edit {
+    margin: 50px 180px;
+}
+
+.profile-detail-edit-img {
+    margin: 50px 150px;
+>figure{
+    >img {
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+    }
+}
+    
+}
+#bx-image-add{
+    position: relative;
+    top: 70px;
+    font-size: 25px;
+    left: 80px;
+    cursor: pointer;
+}
+.profile-edited-details {
+    display: grid;
+    gap: 30px;
+
+    >input,
+    textarea {
+        height: 50px;
+        padding: 20px;
+        border: 1px solid #ff0080;
+        font-size: 20px;
+        outline: none;
+    }
+}
+
+.profile-details-edit {
+    >button {
+        margin: 20px;
+        width: 90px;
+        height: 40px;
+        border-radius: 10px;
+        color: bisque;
+        font-size: 20px;
+    }
+
+    >button:first-child {
+        background: red;
+
+    }
+    >button:nth-child(2){
+        background: blue;
+    }
+}
+
+@media (max-width:1230px) and (min-width:600px) {
+    .profile-details-edit {
+        margin: 30px 60px;
+    }
+    .profile-detail-edit-img {
+        margin: 30px 80px;
+    >figure{
+
+        >img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+    }
+    }
+    #bx-image-add{
+        position: relative;
+        top: 70px;
+        font-size: 20px;
+        left: 80px;
+        cursor: pointer;
+    }
+    .profile-edited-details {
+        display: grid;
+        gap: 20px;
+    
+        >input,
+        textarea {
+            height: 35px;
+            padding: 10px;
+            border: 1px solid #ff0080;
+            font-size: 18px;
+            outline: none;
+        }
+    }
+    .profile-details-edit {
+        >button {
+            margin: 10px;
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            color: bisque;
+            font-size: 18px;
+        }
+    
+    }
+    
+}
+
+@media (max-width:800px) and (min-width:600px) {
+    .profile-detail-edit-img {
+        margin: 10px 40px;
+    >figure{
+        >img {
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+    }
+        
+    }
+    #bx-image-add{
+        position: relative;
+        top: 60px;
+        font-size: 18px;
+        left: 80px;
+        cursor: pointer;
+    }
+    .profile-details-edit {
+        >button {
+            margin: 5px;
+            width: 60px;
+            height: 25px;
+            border-radius: 10px;
+            color: bisque;
+            font-size: 15px;
+        }
+    
+    }
+}
+@media (max-width:600px) and (min-width:200px) {
+    .profile-details-edit {
+        margin: 10px 20px;
+    }
+    .profile-detail-edit-img {
+        margin: 5px 50px;
+    >figure{
+
+        >img {
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+        }
+    }
+    }
+    #bx-image-add{
+        position: relative;
+        top: 55px;
+        font-size: 15px;
+        left: 80px;
+        cursor: pointer;
+    }
+    .profile-edited-details {
+        display: grid;
+        gap: 10px;
+    
+        >input,
+        textarea {
+            height: 35px;
+            padding: 5px;
+            border: 1px solid #ff0080;
+            font-size: 15px;
+            outline: none;
+        }
+    }
+    .profile-details-edit {
+        >button {
+            margin: 5px;
+            width: 60px;
+            height: 20px;
+            border-radius: 10px;
+            color: bisque;
+            font-size: 12px;
+            position: relative;
+            left: 100px;
+        }
+    
+    }
+}
+@media (max-width:400px) and (min-width:200px){
+    .profile-detail-edit-img {
+        margin: 5px 5px;
+    >figure{
+
+        >img {
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+        }
+    }
+    }
+    .profile-edited-details {
+        display: grid;
+        gap: 5px;
+    margin-left: 17px;
+        >input,
+        textarea {
+            height: 30px;
+            padding: 2px;
+            width: 170px;
+            border: 1px solid #ff0080;
+            font-size: 15px;
+            outline: none;
+        }
+    }
+    .profile-details-edit {
+        >button {
+            margin: 2px;
+            width: 60px;
+            height: 20px;
+            border-radius: 10px;
+            color: bisque;
+            font-size: 10px;
+            position: relative;
+            left: 20px;
+        }
+    
+    }
+}

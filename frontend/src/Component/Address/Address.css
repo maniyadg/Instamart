@@ -1,0 +1,956 @@
+.order-confirm-container {
+    width: 100%;
+}
+
+.user-info-head {
+    display: flex;
+
+    >h2 {
+        padding-left: 350px;
+        padding-top: 10px;
+    }
+
+    >button {
+        margin-left: 400px;
+        height: 40px;
+        width: 100px;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-weight: 600;
+        color: blue;
+    }
+}
+
+.user-info-box {
+    height: max-content;
+    width: 90%;
+    margin: 50px;
+    background: rgb(228, 222, 222);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.address-divider {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.user-info-content {
+    padding-left: 100px;
+}
+
+.user-info-log {
+    font-size: 15px;
+}
+
+.checkout-btn {
+    width: 200px;
+    height: 50px;
+    margin-left: 200px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background: tomato;
+    font-weight: 600;
+    color: white;
+
+}
+
+.address-info-box {
+    height: max-content;
+    width: 90%;
+    margin: 0px 50px;
+    background: rgb(228, 222, 222);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.address-info-head {
+    display: flex;
+
+    >h2 {
+        padding-left: 350px;
+        padding-top: 10px;
+    }
+
+    >button {
+        margin-left: 300px;
+        margin-top: 10px;
+        border: none;
+        background: transparent;
+
+        >i {
+            font-size: 20px;
+        }
+    }
+}
+
+.cash-on-delivery {
+    background: rgb(186, 245, 68);
+}
+
+.payment-option {
+    display: flex;
+    justify-content: space-around;
+}
+
+.address-content-row {
+    display: flex;
+}
+
+#my-orders {
+    display: flex;
+    gap: 20px;
+    width: 70vw;
+    border: 2px solid rgb(126, 124, 124);
+    height: max-content;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#order-product-img {
+    >img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+#order-dispatch-detail {
+    >h5 {
+        font-size: 20px;
+    }
+
+    >p {
+        font-size: 17px;
+    }
+}
+
+.deliver-btn {
+    >button {
+        margin-left: 600px;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 50px;
+        margin-top: -0px;
+        border-radius: 5px;
+        background: tomato;
+        font-weight: 600;
+        color: white;
+    }
+}
+
+.add-pro-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    height: 50px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    >h5 {
+        font-size: 20px;
+    }
+}
+
+.address-change-icons {
+    width: 20%;
+    display: flex;
+    font-size: 30px;
+}
+
+.address-edit-btn {
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: 600;
+    background: rgb(228, 222, 222);
+}
+
+.address-input-radio {
+    width: 10%;
+    font-size: 20px;
+}
+
+.order-info-head {
+    display: flex;
+
+    >h2 {
+        padding-left: 350px;
+        padding-top: 10px;
+    }
+
+    >button {
+        margin-left: 340px;
+        height: 40px;
+        width: 100px;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-weight: 600;
+        color: blue;
+    }
+
+}
+
+.online-payment {
+    background: green;
+}
+
+.order-info-box {
+    height: max-content;
+    width: 90%;
+    margin: 50px 50px;
+    background: rgb(228, 222, 222);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.order-confirm-btn {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgb(5, 5, 5);
+}
+
+@media (max-width:1150px) and (min-width : 1024px) {
+    .address-change-icons {
+        width: 20%;
+        display: flex;
+        font-size: 20px;
+    }
+
+    .deliver-btn {
+        >button {
+            margin-left: 300px;
+            margin-bottom: 20px;
+            width: 200px;
+            height: 50px;
+            margin-top: 0px;
+            border-radius: 5px;
+            background: tomato;
+            font-weight: 600;
+            color: white;
+        }
+    }
+
+    .checkout-btn {
+        width: 200px;
+        height: 50px;
+        margin-left: 100px;
+        margin-top: 15px;
+        border-radius: 5px;
+        background: tomato;
+        font-weight: 600;
+        color: white;
+    }
+}
+
+@media (max-width:1400px) and (min-width : 1024px) {
+    .user-info-head {
+        height: 30px;
+        margin: 10px;
+
+        >h2 {
+            margin-left: -100px;
+            font-size: 20px;
+        }
+
+        >button {
+            height: 30px;
+            width: 100px;
+            margin-top: 5px;
+            margin-left: 325px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: blue;
+        }
+    }
+
+    .deliver-btn {
+        >button {
+            margin-left: 300px;
+            margin-bottom: 20px;
+            width: 200px;
+            height: 50px;
+            margin-top: 0px;
+            border-radius: 5px;
+            background: tomato;
+            font-weight: 600;
+            color: white;
+        }
+
+    }
+
+    .address-info-head {
+        height: 30px;
+        margin: 10px;
+
+        >h2 {
+            font-size: 20px;
+            margin-left: -100px;
+        }
+
+        >button {
+            height: 30px;
+            width: 100px;
+            margin-top: 5px;
+            margin-left: 180px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: blue;
+        }
+
+    }
+
+    .order-confirm-btn {
+        margin-left: 30px;
+        width: 250px;
+        height: 50px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+}
+
+/* Tab Css */
+@media (max-width:1024px) and (min-width : 600px) {
+    .user-info-head {
+        height: 15px;
+        margin: 10px;
+
+        >h2 {
+            padding-left: 50px;
+            padding-top: 6px;
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+
+        >button {
+            height: 20px;
+            width: 50px;
+            margin-top: 5px;
+            margin-left: 325px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: blue;
+        }
+    }
+
+    .user-info-box {
+        height: 130px;
+        width: 90%;
+        margin: 10px 10px 0px 30px;
+        background: rgb(228, 222, 222);
+
+    }
+
+    .add-pro-name {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        height: 45px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        >h5 {
+            font-size: 18px;
+        }
+    }
+
+    #order-product-img {
+        >img {
+            height: 120px;
+            width: 120px;
+        }
+    }
+
+    #order-product-price {
+        >h5 {
+            font-size: 18px;
+        }
+    }
+
+    #order-dispatch-detail {
+        >h5 {
+            font-size: 18px;
+        }
+
+        >p {
+            font-size: 14px;
+        }
+    }
+
+    .user-info-content {
+        padding-left: 50px;
+
+        >h5 {
+            font-size: 15px;
+        }
+    }
+
+    .user-info-log {
+        font-size: 10px;
+    }
+
+    .checkout-btn {
+        height: 20px;
+        width: 80px;
+        font-size: 7px;
+        margin-top: 50px;
+        margin-left: -20px;
+    }
+
+    .address-info-box {
+        min-height: 130px;
+        height: max-content;
+        width: 90%;
+        margin: 10px 10px 0px 30px;
+    }
+
+    .address-info-head {
+        height: 30px;
+
+        >h2 {
+            font-size: 15px;
+            margin-left: -350px;
+        }
+
+        >button {
+            height: 20px;
+            width: 50px;
+            margin-left: 220px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: blue;
+        }
+
+    }
+
+    .address-input-radio {
+        margin-top: 30px;
+
+    }
+
+    .address-content {
+        >h5 {
+            font-size: 10px;
+        }
+    }
+
+    .deliver-btn {
+        >button {
+            height: 20px;
+            width: 80px;
+            font-size: 7px;
+            margin-top: -0px;
+            margin-left: 180px;
+            background: tomato;
+            font-weight: 550;
+            font-size: 7px;
+            color: white;
+        }
+
+    }
+
+    .address-change-icons {
+        font-size: 15px;
+
+    }
+
+    .order-info-box {
+        margin: 10px 10px 0px 30px;
+        min-height: 60vh;
+        height: max-content;
+
+    }
+
+    .order-info-head {
+        height: 30px;
+
+        >h2 {
+            font-size: 20px;
+            margin-left: -300px;
+        }
+    }
+
+    .payment-option {
+        >button {
+            >p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    hr {
+        width: 70vw;
+    }
+}
+
+/* Mobile Css */
+@media (max-width:600px) and (min-width:200px) {
+    .user-info-box {
+        height: 130px;
+        width: 90%;
+        margin: 10px 10px 0px 30px;
+        background: rgb(228, 222, 222);
+
+    }
+
+    .order-confirm-container {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .user-info-head {
+        height: 15px;
+        margin: 10px;
+
+        >h2 {
+            padding-left: 20px;
+            padding-top: 6px;
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+
+        >button {
+            height: 20px;
+            width: 50px;
+            margin-top: 5px;
+            margin-left: 225px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: blue;
+        }
+    }
+
+    .user-info-content {
+        padding-left: 20px;
+
+        >h5 {
+            font-size: 15px;
+        }
+    }
+
+    .user-info-log {
+        font-size: 10px;
+    }
+
+    .checkout-btn {
+        height: 20px;
+        width: 80px;
+        font-size: 7px;
+        margin-top: 50px;
+        margin-left: -20px;
+    }
+
+    .address-info-box {
+        min-height: 100px;
+        height: max-content;
+        width: 90%;
+        margin: 10px 10px 0px 30px;
+    }
+
+    .address-info-head {
+        height: 30px;
+        margin: 10px;
+
+        >h2 {
+            font-size: 16px;
+            margin-left: -360px;
+        }
+
+        >button {
+            height: 20px;
+            width: 50px;
+            margin-top: 5px;
+            margin-left: 120px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: blue;
+        }
+
+    }
+
+    .address-input-radio {
+        margin-top: 30px;
+
+    }
+
+    .address-content {
+
+        >h5 {
+            font-size: 15px;
+        }
+
+    }
+
+    .deliver-btn {
+        >button {
+            height: 20px;
+            width: 80px;
+            font-size: 7px;
+            margin-left: 180px;
+            background: tomato;
+            font-weight: 550;
+            font-size: 7px;
+            color: white;
+        }
+
+    }
+
+    .address-change-icons {
+        font-size: 15px;
+
+    }
+
+    .order-info-box {
+        margin: 10px 10px 0px 30px;
+        min-height: 60vh;
+        height: max-content;
+
+    }
+
+    .order-info-head {
+        height: 30px;
+        margin: 10px;
+
+        >h2 {
+            font-size: 20px;
+            margin-left: -350px;
+
+        }
+    }
+
+    #my-orders {
+        display: flex;
+        gap: 10px;
+        width: 80vw;
+        border: 2px solid rgb(126, 124, 124);
+        height: max-content;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .add-pro-name {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        height: 35px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        >h5 {
+            font-size: 14px;
+        }
+    }
+
+    #order-product-img {
+        >img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    #order-product-price {
+        >h5 {
+            font-size: 14px;
+        }
+    }
+
+    #order-dispatch-detail {
+        >h5 {
+            font-size: 11px;
+        }
+
+        >p {
+            font-size: 8px;
+        }
+    }
+
+    .order-confirm-btn {
+        margin-left: 40px;
+        width: 180px;
+        height: 30px;
+        margin-top: 15px;
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width:425px) and (min-width:200px) {
+    .user-info-box {
+        height: 130px;
+        width: 90%;
+        margin: 10px 0px 0px 10px;
+        background: rgb(228, 222, 222);
+
+    }
+
+    .user-info-head {
+        height: 15px;
+        margin: 10px;
+
+        >h2 {
+            padding-left: 20px;
+            padding-top: 6px;
+            padding-bottom: 20px;
+            font-size: 18px;
+        }
+
+        >button {
+            height: 20px;
+            width: 50px;
+            margin-top: 5px;
+            margin-left: 225px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: blue;
+        }
+    }
+
+    .user-info-content {
+        padding-left: 20px;
+
+        >h5 {
+            font-size: 13px;
+        }
+    }
+
+    .user-info-log {
+        font-size: 6px;
+    }
+
+    .checkout-btn {
+        height: 20px;
+        width: 80px;
+        font-size: 7px;
+        margin-top: 40px;
+        margin-right: 80px;
+
+    }
+
+    .address-info-box {
+        min-height: 100px;
+        height: max-content;
+        width: 90%;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .address-info-head {
+        height: 30px;
+        margin: 10px;
+
+        >h2 {
+            font-size: 14px;
+            margin-left: -350px;
+        }
+
+        >button {
+            height: 20px;
+            width: 50px;
+            margin-top: 5px;
+            margin-left: 80px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: blue;
+        }
+
+    }
+
+    .address-input-radio {
+        margin-top: 30px;
+
+    }
+
+    .address-content {
+
+        >h5 {
+            font-size: 15px;
+        }
+
+    }
+
+    .deliver-btn {
+        >button {
+            height: 20px;
+            width: 80px;
+            font-size: 7px;
+            margin-left: 180px;
+            background: tomato;
+            font-weight: 550;
+            font-size: 7px;
+            color: white;
+        }
+
+    }
+
+    .address-change-icons {
+        font-size: 15px;
+
+    }
+
+    .order-info-box {
+        margin: 10px 10px 0px 10px;
+        min-height: 60vh;
+        height: max-content;
+
+    }
+
+    .order-info-head {
+        height: 30px;
+        margin: 10px;
+
+        >h2 {
+            font-size: 20px;
+            margin-left: -350px;
+
+        }
+    }
+
+    #my-orders {
+        display: flex;
+        gap: 5px;
+        width: 80vw;
+        border: 2px solid rgb(126, 124, 124);
+        height: max-content;
+        margin: 5px;
+        border-radius: 10px;
+        padding: 2px;
+    }
+
+    .add-pro-name {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        height: 35px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        >h5 {
+            font-size: 10px;
+        }
+    }
+
+    #order-product-img {
+        padding: 10px 10px;
+
+        >img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    #order-product-price {
+        >h5 {
+            font-size: 10px;
+        }
+    }
+
+    #order-dispatch-detail {
+        >h5 {
+            font-size: 8px;
+        }
+
+        >p {
+            font-size: 6px;
+        }
+    }
+
+    .order-confirm-btn {
+        margin-left: 60px;
+        width: 180px;
+        height: 30px;
+        margin-top: 15px;
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width:355px) and (min-width:200px) {
+    .checkout-btn {
+        height: 20px;
+        width: 80px;
+        font-size: 7px;
+        margin-top: 40px;
+        position: relative;
+        left: 60px;
+
+    }
+
+    .address-info-head {
+        height: 30px;
+        margin: 6px;
+
+        >h2 {
+            font-size: 12px;
+            margin-left: -350px;
+        }
+
+        >button {
+            height: 20px;
+            width: 50px;
+            margin-top: 5px;
+            margin-left: 40px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: blue;
+
+            >i {
+                font-size: 13px;
+            }
+        }
+
+    }
+
+    .deliver-btn {
+        >button {
+            height: 20px;
+            width: 80px;
+            font-size: 7px;
+            margin-top: 0px;
+            margin-left: 100px;
+            background: tomato;
+            font-weight: 550;
+            font-size: 7px;
+            color: white;
+        }
+
+    }
+
+    .address-change-icons {
+        font-size: 13px;
+
+
+
+    }
+
+    .order-confirm-btn {
+        margin-left: 40px;
+        width: 180px;
+        height: 30px;
+        margin-top: 15px;
+        font-size: 9px;
+
+        >p {
+            font-size: 5px;
+        }
+    }
+}

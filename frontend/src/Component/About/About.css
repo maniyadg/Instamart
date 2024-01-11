@@ -1,0 +1,312 @@
+.about-container{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about-logo{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: 20px;
+    left: 31rem;
+    border: 6px double #011d4a;
+    border-radius: 50%
+}
+.about-app-name{
+    margin-top: 10px;
+    margin-left: 500px;
+    >h5{
+      font-size: 30px;
+      color: #66ff00;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+.about-description{
+    >p{
+        margin: 20px;
+    }
+}
+.about-founder-name{
+    >h5{
+        position: relative;
+        left: 800px;
+        font-size: 20px;
+    }
+    >h6{
+        position: relative;
+        left: 700px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+.about-copyright{
+    text-align: center;
+    font-size: 18px;
+    color: #8db600;
+}
+@media (max-width:1300px) and (min-width:1190px) {
+    .about-founder-name{
+        >h5{
+            position: relative;
+            left: 700px;
+            font-size: 20px;
+        }
+        >h6{
+            position: relative;
+            left: 600px;
+            margin-bottom: 50px;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+@media (max-width:1190px) and (min-width:1100px) {
+    .about-founder-name{
+        >h5{
+            position: relative;
+            left: 600px;
+            font-size: 20px;
+        }
+        >h6{
+            position: relative;
+            left: 500px;
+            margin-bottom: 50px;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+@media (max-width:1100px) and (min-width:800px) {
+    .about-logo{
+        width: 130px;
+        height: 130px;
+        position: relative;
+        top: 20px;
+        left: 20rem;
+        border: 6px double #011d4a;
+        border-radius: 50%
+    }
+    .about-app-name{
+        margin-top: 10px;
+        margin-left: 330px;
+        >h5{
+          font-size: 30px;
+          color: #66ff00;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+    .about-founder-name{
+        >h5{
+            position: relative;
+            left: 600px;
+            font-size: 18px;
+        }
+        >h6{
+            position: relative;
+            left: 500px;
+            margin-bottom: 50px;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+@media (max-width:1020px) and (min-width:945px) {
+    .about-founder-name{
+        >h5{
+            position: relative;
+            left: 500px;
+            font-size: 20px;
+        }
+        >h6{
+            position: relative;
+            left: 400px;
+            margin-bottom: 50px;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+@media (max-width:945px) and (min-width:800px) {
+    .about-founder-name{
+        >h5{
+            position: relative;
+            left: 400px;
+            font-size: 18px;
+        }
+        >h6{
+            position: relative;
+            left: 300px;
+            margin-bottom: 50px;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+@media (max-width:800px) and (min-width:600px) {
+    .about-logo{
+        width: 130px;
+        height: 130px;
+        position: relative;
+        top: 20px;
+        left: 14rem;
+        border: 6px double #011d4a;
+        border-radius: 50%
+    }
+    .about-app-name{
+        margin-top: 10px;
+        margin-left: 230px;
+        >h5{
+          font-size: 30px;
+          color: #66ff00;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+    .about-founder-name{
+        >h5{
+            position: relative;
+            left: 300px;
+            font-size: 16px;
+        }
+        >h6{
+            position: relative;
+            left: 200px;
+            margin-bottom: 50px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+@media (max-width:600px) and (min-width:200px) {
+    .about-container{
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 80vh;
+    }
+    .about-logo{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 20px;
+        left: 14rem;
+        border: 6px double #011d4a;
+        border-radius: 50%
+    }
+    .about-app-name{
+        margin-top: 10px;
+        margin-left: 230px;
+        >h5{
+          font-size: 25px;
+          color: #66ff00;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+    .about-description{
+        >p{
+            color: aliceblue;
+        }
+    }
+    .about-founder-name{
+        color: beige;
+        >h5{
+            position: relative;
+            left: 300px;
+            font-size: 16px;
+        }
+        >h6{
+            position: relative;
+            left: 200px;
+            margin-bottom: 50px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+@media (max-width:515px) and (min-width:450px) {
+    .about-founder-name{
+        color: beige;
+        >h5{
+            position: relative;
+            left: 200px;
+            font-size: 14px;
+        }
+        >h6{
+            position: relative;
+            left: 100px;
+            margin-bottom: 30px;
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+@media (max-width:450px) and (min-width:200px) {
+    
+    .about-logo{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 20px;
+        left: 10rem;
+        border: 6px double #011d4a;
+        border-radius: 50%
+    }
+    .about-app-name{
+        margin-top: 10px;
+        margin-left: 170px;
+        >h5{
+          font-size: 25px;
+          color: #66ff00;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+    .about-founder-name{
+        color: beige;
+        >h5{
+            position: relative;
+            left: 200px;
+            font-size: 14px;
+        }
+        >h6{
+            position: relative;
+            left: 100px;
+            margin-bottom: 30px;
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+@media (max-width:380px) and (min-width:200px) {
+    
+    .about-logo{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: 20px;
+        left: 7rem;
+        border: 6px double #011d4a;
+        border-radius: 50%
+    }
+    .about-app-name{
+        margin-top: 10px;
+        margin-left: 120px;
+        >h5{
+          font-size: 20px;
+          color: #66ff00;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+    .about-founder-name{
+        color: beige;
+        >h5{
+            position: relative;
+            left: 100px;
+            font-size: 12px;
+        }
+        >h6{
+            position: relative;
+            left: 50px;
+            margin-bottom: 30px;
+            font-size: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}

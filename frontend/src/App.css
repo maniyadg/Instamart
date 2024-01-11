@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+.sign-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    background: linear-gradient(steelblue, aliceblue);
+    font-weight: 400;
+    height: max-content;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root {
+    --mainColor: #89216b;
+    --whiteColor: #ffffff;
+    --titleColor: #555555;
+    --labelColor: #333333;
+}
+
+.wrapper {
+    /* position: relative; */
+    height: max-content;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper .form-container {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 25rem;
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: .5rem;
+    margin: 2rem 0;
+    box-shadow: 0 0 1rem 0 rgba(253, 22, 22, 0.2);
+}
+
+.wrapper .form-container form h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--titleColor);
+    padding-right: 11rem;
+    padding-top: 4rem;
+}
+
+.wrapper .form-container form {
+    padding-left: 10rem;
+}
+
+.wrapper .form-container form .form-group {
+    position: relative;
+    width: 32rem;
+    margin: 3rem 0;
+
+
+}
+
+.wrapper .form-container form .form-group i,
+.wrapper .form-container form .form-group label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    background: whitesmoke;
+    color: var(--labelColor);
+    padding: 0 .5rem;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+
+.wrapper .form-container form .form-group i {
+    left: .5rem;
+}
+
+.wrapper .form-container form .form-group label {
+    left: 2.5rem;
+}
+
+.wrapper .form-container form .form-group input,
+.wrapper .form-container form .form-group select {
+    width: 20rem;
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: .5rem;
+    border: .1rem solid var(--labelColor);
+    outline: none;
+    font-size: 1.6rem;
+    color: var(--labelColor);
+    background: transparent;
+
+}
+
+.wrapper .form-container form .form-group select:first-child {
+    font-size: 22px;
+    opacity: 1;
+
+}
+
+
+form .form-group input:focus~label,
+form .form-group input:valid~label,
+form .form-group input:focus~i,
+form .form-group input:valid~i {
+    top: 0 !important;
+    font-size: 1.2rem !important;
+    background-color: var(--whiteColor);
+}
+
+.password-show-verify-pass {
+    position: relative;
+    top: -40px;
+    left: 10px;
+
+}
+
+.wrapper .form-container form .forgot-pass {
+    padding-left: 5rem;
+    font-size: 1.1rem;
+    margin: 0;
+    position: relative;
+    top: -20px;
+    color: var(--labelColor);
+}
+
+.wrapper .form-container form .forgot-pass .forgot-link {
+    text-transform: capitalize;
+    color: var(--mainColor);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.wrapper .form-container form .forgot-pass .forgot-link:hover {
+    color: #da4453;
+}
+
+.wrapper .form-container form .btn {
+    background: linear-gradient(to right, #da4453, var(--mainColor));
+    color: var(--whiteColor);
+    text-transform: capitalize;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 0 .2rem 1rem rgba(0 0 0 / .4);
+}
+
+.rounded-circle:hover {
+    background: hsl(147, 95%, 61%);
+    transition: 3s ease;
+}
+
+.wrapper .form-container form .login-link {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    color: var(--labelColor);
+    margin: 2.5rem 0;
+}
+
+.wrapper .form-container form .login-link .signin-link {
+    text-transform: capitalize;
+    color: var(--mainColor);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.wrapper .form-container form .login-link .signin-link:hover {
+    color: #da4453;
+}
+
+
+
+
+
+.base-design {
+    background-color: #354376;
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: 100%;
+    height: max-content;
+    min-height: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+
+}
+
+
+
+.whole-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#verify-container{
+    margin-top: 80px;
+}
+
+#form-group{
+    margin-top: 1rem;
+}
+
+.password-show-sign-in {
+    position: relative;
+    top: -40px;
+    left: 10px;
+
+    
+
+}
+#signup-place{
+    margin-left: 350px;
+}
+#signup-btn{
+    margin-left: 350px;
+}
+@media (max-width:1390px) and (min-width:1170px) {
+    #signup-place{
+        margin-left: 250px;
+    }
+    #signup-btn{
+        margin-left: 250px;
+    }
+}
+@media (max-width:1170px) and (min-width:900px) {
+    #signup-place{
+        margin-left: 150px;
+    }
+    #signup-btn{
+        margin-left: 150px;
+    }
+}
+@media (max-width:950px) and (min-width:370px) {
+    #signup-btn{
+        margin-left: 50px;
+    }
+}
+@media (max-width:950px) and (min-width:200px) {
+    #signup-place{
+        margin-left: 50px;
+    }
+}
+.password-show {
+    position: relative;
+    top: -40px;
+    left: 10px;
+
+
+}
+
+#forget-box {
+    position: relative;
+    top: 200px;
+
+}
+
+
+
+/* content box CSS */
+.content {
+    width: 83%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 88vh;
+    margin: 0rem 0rem 0rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+
+}
+
+.back-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+
+    >button {
+        border: none;
+        padding: 10px;
+        background: #010102;
+        border-radius: 10px;
+        color: #eee5eb;
+    }
+
+}
+
+
+.content::-webkit-scrollbar {
+    width: 15px;
+
+}
+
+.content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #888;
+
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.mobile-nav {
+    display: none;
+}
+
+
+
+
+  
+
+
+
+/* Loader */
+.loader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    width: 80px;
+    height: 80px;
+    padding-left: 0;
+}
+
+.loader:after {
+    content: ' ';
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fa9c23;
+    border-color: #fa9c23 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width:600px) and (min-width:200px) {
+    .sign-container {
+        width: 100%;
+        background: none;
+        margin: 0px 0px;
+
+    }
+    .wrapper .form-container form .form-group i,
+.wrapper .form-container form .form-group label {
+
+    background: white;
+   
+}
+
+    .wrapper .form-container {
+        background-color: transparent;
+        box-shadow: none;
+
+    }
+    form .form-group input:focus~label,
+    form .form-group input:valid~label,
+    form .form-group input:focus~i,
+    form .form-group input:valid~i {
+        top: 0 !important;
+        font-size: 1rem !important;
+        background-color: transparent;
+        margin-left: 40px;
+    }
+    #verify-container{
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width:370px) and (min-width:200px) {
+    .sign-container {
+        width: 100%;
+        background: none;
+        margin: 0px 0px;
+    }
+    #signup-btn{
+        margin-left: 80px;
+    }
+
+    .wrapper .form-container form .form-group input,
+    .wrapper .form-container form .form-group select {
+        width: 16rem;
+        height: 3rem;
+        margin-left: 30px;
+        padding: 0 1rem;
+        border-radius: .5rem;
+        border: .1rem solid var(--labelColor);
+        outline: none;
+        font-size: 1.6rem;
+        color: var(--labelColor);
+        background: transparent;
+
+    }
+
+    form .form-group input:focus~label,
+    form .form-group input:valid~label,
+    form .form-group input:focus~i,
+    form .form-group input:valid~i {
+        top: 0 !important;
+        font-size: 1rem !important;
+        background-color: var(--whiteColor);
+        margin-left: 40px;
+    }
+
+    .password-show-sign-in {
+        position: relative;
+        top: -40px;
+        left: 35px;
+
+    }
+    .password-show-verify-pass {
+        position: relative;
+        top: -40px;
+        left: 30px;
+    
+    }
+    .wrapper .form-container form .btn {
+        margin-left: 35px;
+        width: 16rem;
+        font-size: 1.6rem;
+
+    }
+   
+    
+}
+
+@media (max-width:600px) and (min-width:200px) {
+
+    .base-design {
+        overflow: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    .content {
+        flex: 0 0 100%;
+        max-width: 100%;
+        min-width: 95vw;
+        height: 80vh;
+        background-color: rgb(255, 255, 255);
+        overflow-y: scroll;
+        background: #354376;
+
+    }
+
+
+    .content::-webkit-scrollbar {
+        display: none;
+        width: 5px;
+
+    }
+
+    .content::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .content::-webkit-scrollbar-thumb {
+        background: #888;
+
+    }
+
+    .content::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .mobile-nav {
+        display: block;
+        height: 30px;
+        background: #fff;
+
+        >ul {
+            list-style: none;
+            display: flex;
+            margin-top: 10px;
+            margin-left: -30px;
+            justify-content: space-evenly;
+
+            >li {
+                cursor: pointer;
+            }
+        }
+    }
+}

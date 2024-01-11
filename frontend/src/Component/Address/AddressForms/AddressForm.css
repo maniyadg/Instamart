@@ -1,0 +1,291 @@
+.create-container {
+    min-height: 100vh;
+    height: max-content;
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.create-box {
+    min-width: 50vw;
+    width: max-content;
+    margin: 20px 230px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 5px;
+
+}
+
+.create-head {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.create-form-group {
+    display: flex;
+    flex-direction: column;
+
+    >label {
+        font-size: 20px;
+        padding-left: 100px;
+    }
+
+    >input,
+    textarea,
+    select {
+        height: 50px;
+        width: 40vw;
+        margin-left: 6vw;
+
+    }
+}
+
+.custom-file {
+    width: 40vw;
+    margin-left: 6vw;
+}
+
+.create-img {
+    display: flex;
+    margin-left: 8vw;
+
+}
+
+.create-btn {
+    background: rgb(3, 133, 255);
+    width: 230px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 18vw;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.create-btn:hover {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (min-width:2560px) {
+    .create-box {
+        flex: 0 0 60%;
+        max-width: 60%;
+        margin: 20px 450px;
+        min-height: 80vh;
+    }
+
+    .create-head {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 80px;
+    }
+
+    .create-form-group {
+        >label {
+            font-size: 40px;
+            padding-left: 200px;
+        }
+
+        >input,
+        textarea,
+        select {
+            height: 100px;
+            width: 40vw;
+            margin-left: 7vw;
+            font-size: 40px;
+
+        }
+    }
+
+    .create-btn {
+        width: 430px;
+        font-size: 40px;
+        margin-left: 18vw;
+        margin-bottom: 40px;
+        height: 100px;
+        border-radius: 8px;
+    }
+
+}
+/* Tab css */
+@media (max-width:1400px) and (min-width : 800px){
+    .create-box {
+        min-width: 60vw;
+        width: max-content;
+        margin: 10px 100px;
+        min-height: 100vh;
+        box-sizing: border-box;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 5px;
+    
+    }
+    .create-form-group {
+        display: flex;
+        flex-direction: column;
+    
+        >label {
+            font-size: 18px;
+            padding-left: 55px;
+            color: rgb(14, 14, 13);
+        }
+    
+        >input,
+        textarea,
+        select {
+            height: 50px;
+            margin-left: 6vw;
+    
+        }
+    }
+}
+@media (max-width:800px) and (min-width : 600px){
+    .create-form-group {
+        display: flex;
+        flex-direction: column;
+    
+        >label {
+            font-size: 18px;
+            padding-left: 55px;
+            color: rgb(14, 14, 13);
+        }
+    
+        >input,
+        textarea,
+        select {
+            height: 50px;
+            margin-left: 6vw;
+    
+        }
+    }
+    .create-box {
+        min-width: 60vw;
+        width: max-content;
+        margin: 10px 100px;
+        min-height: 100vh;
+        box-sizing: border-box;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 5px;
+    
+    }
+}
+/* Mobile Css */
+
+@media (max-width:600px) and (min-width:200px) {
+    .create-container {
+        min-height: 70vh;
+        height: max-content;
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    .create-box {
+        min-width: 80vw;
+        width: max-content;
+        margin: 0px 40px;
+        min-height: 100vh;
+        box-sizing: border-box;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 5px;
+        background: rgb(250, 248, 248);
+
+    }
+    .create-head {
+        text-align: center;
+        padding-top: 20px;
+        color: rgb(15, 15, 14);
+    }
+    
+    .create-form-group {
+        display: flex;
+        flex-direction: column;
+    
+        >label {
+            font-size: 18px;
+            padding-left: 25px;
+            color: rgb(14, 14, 13);
+        }
+    
+        >input,
+        textarea,
+        select {
+            height: 50px;
+            width: 70vw;
+            margin-left: 6vw;
+    
+        }
+    }
+    
+    .custom-file {
+        width: 70vw;
+        margin-left: 6vw;
+    }
+    
+    .create-img {
+        display: flex;
+        margin-left: 8vw;
+    
+    }
+    
+    .create-btn {
+        background: rgb(3, 133, 255);
+        width: 130px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 25vw;
+        margin-bottom: 20px;
+        height: 30px;
+        border-radius: 8px;
+    }
+    
+    .create-btn:hover {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width:350px) and (min-width:200px) {
+    .create-box {
+        min-width: 80vw;
+        width: max-content;
+        margin: 0px 15px;
+        min-height: 100vh;
+        box-sizing: border-box;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 5px;
+        background: rgb(250, 248, 248);
+
+    }
+    .create-btn {
+        background: rgb(3, 133, 255);
+        width: 80px;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 25vw;
+        margin-bottom: 20px;
+        height: 30px;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,299 @@
+.topbar {
+
+    height: 10vh;
+    width: 83%;
+    display: inline-block;
+    margin: 0rem 0rem 1rem auto;
+    background-color: rgb(255, 255, 255);
+
+    >.nav-mobile-items {
+        display: none;
+    }
+
+
+    >.nav-items {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        >ul {
+            display: flex;
+            width: 80%;
+            padding-top: 10px;
+            font-weight: bold;
+            list-style: none;
+            justify-content: flex-end;
+            gap: 30px;
+
+            >.icon {
+                cursor: pointer;
+                margin-top: 8px;
+                >.t-icon {
+                    font-size: 1.5rem;
+                }
+
+                >i {
+                    font-size: 1.5rem;
+                }
+
+            }
+
+           
+
+        }
+
+
+
+    }
+}
+.topbar-pro{
+    display: flex;
+    margin-left: 20px;
+    >span{
+        display: flex;
+        gap: 5px;
+        >.image{
+            position: relative;
+            /* top: 10px; */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid rgb(151, 71, 226);
+        }
+       
+    }
+}
+.topbar-username{
+        position: relative;
+        top: 18px;
+        left: 5px;
+        text-transform: capitalize;
+     
+}
+.topbar-search{
+   margin-left: 180px; 
+}
+#topbar-btn {
+    width: 65px;
+}
+
+.src-btn {
+    border-radius: 15px;
+    width: 60px;
+}
+
+
+@media (max-width:1045px) and (min-width:990px) {
+    .topbar-search{
+        margin-left: 130px; 
+     }
+
+}
+
+@media (max-width:990px) and (min-width:865px) {
+    .topbar-search{
+        margin-left: 60px; 
+     }
+     #topbar-btn {
+        width: 35px;
+    }
+}
+@media (max-width:865px) and (min-width:755px) {
+    .topbar-search{
+        margin-left: 20px; 
+     }
+     #topbar-src{
+        >input{
+            width: 200px;
+        }
+     }
+     #topbar-btn {
+        width: 35px;
+    }
+
+}
+@media (max-width:755px) and (min-width:690px) {
+    .topbar-search{
+        margin-left: 10px; 
+     }
+     #topbar-src{
+        >input{
+            width: 150px;
+        }
+     }
+     #topbar-btn {
+        width: 35px;
+    }
+
+}
+@media (max-width:690px) and (min-width:600px) {
+    .topbar-search{
+        margin-left: 10px; 
+     }
+     #topbar-src{
+        >input{
+            width: 150px;
+        }
+     }
+     #topbar-btn {
+        width: 35px;
+    }
+#nav-list{
+gap: 15px;
+}
+.t-icon{
+    >i{
+        font-size: 18px;
+    }
+}
+
+
+
+    }
+
+
+/* Mobile Css */
+@media (max-width:600px) and (min-width:200px) {
+    .topbar {
+        background-color: #354376;
+        position: relative;
+        height: 5vh;
+        margin-top: 15px;
+
+        >.nav-mobile-items {
+            display: block;
+
+            >ul {
+                display: flex;
+                position: relative;
+                justify-content: space-evenly;
+                list-style: none;
+                flex-flow: row;
+
+                >li {
+                    color: antiquewhite;
+                    cursor: pointer;
+                }
+
+
+
+            }
+
+            .home-logo {
+                position: absolute;
+                left: -50px;
+            }
+        }
+
+        >.nav-items {
+            display: none;
+
+            >ul {
+                >li {
+                    display: none;
+                }
+
+                >li:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .src-input {
+        height: 22px;
+        border-radius: 15px;
+        width: 20rem;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 10px;
+        margin-left: -150px;
+    }
+
+    .src-btn {
+        position: relative;
+        top: -10px;
+        left: 170px;
+        display: flex;
+        border: none;
+        background: none;
+
+        >i {
+            position: relative;
+            top: 5px;
+            left: -40px;
+        }
+
+    }
+
+    .src-btn:hover {
+        color: blue;
+    }
+
+    .mobile-src {
+        color: #fff;
+        position: relative;
+        top: 8px;
+        right: 25px;
+    }
+    .home-src{
+        >input{
+                border-radius: 20px;
+                width: 180px;
+                font-size: 13px;
+                padding: 3px 20px;
+             
+        }
+    }
+}
+
+@media (max-width:350px) and (min-width:200px) {
+    .topbar {
+        background-color: #354376;
+        position: relative;
+        height: 5vh;
+        margin-top: 15px;
+
+        >.nav-mobile-items {
+            display: block;
+
+            >ul {
+                display: flex;
+                position: relative;
+                justify-content: space-evenly;
+                list-style: none;
+                flex-flow: row;
+
+                >li {
+                    color: antiquewhite;
+                }
+
+
+
+            }
+
+        }
+    }
+    .home-src{
+        >input{
+                border-radius: 20px;
+                padding-left: 20px;
+                width: 130px;
+             
+        }
+    }
+    .mobile-src {
+        color: #fff;
+        position: relative;
+        top: 8px;
+        left: 0px;
+    }
+}
+
+@media (max-width:368px) {
+    .src-input {
+        width: 15rem;
+        margin-left: -80px;
+    }
+
+}

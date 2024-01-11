@@ -1,0 +1,480 @@
+.orders-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 73vw;
+}
+.search-orders{
+    display: flex;
+    width: 100%;
+    margin: 50px;
+
+    >input{
+        width: 60vw;
+        height: 8vh;
+        font-size: 20px;
+        border-radius: 5px;
+        padding-left: 20px;
+        border: 1px solid rgb(163, 161, 161);
+        outline: none;
+    }
+    >.order-search-btn{
+        width: 8vw;
+        border-radius: 8px;
+        margin: 0px 3px ;
+        background: linear-gradient(to right, #9fccfa,#0974f1);
+        color: antiquewhite;
+        
+    }
+    >.order-search-btn:hover{
+        box-shadow: 2px 2px 2px 2px rgb(124, 209, 248);
+        
+    }
+    
+}
+.order-success{
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    /* background: ;  */
+    color: rgb(3, 104, 3); 
+    font-size: 18px;  
+}
+.order-pro-name{
+    display: -webkit-box;
+            -webkit-line-clamp: 2;
+            height: 50px;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            >h5{
+                font-size: 20px;
+            }
+}
+
+.my-orders{
+    display: flex;
+    box-sizing: border-box;
+    height: 25vh;
+    width: 70vw;
+    border: 1px solid rgb(192, 190, 190);
+    margin: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    
+    >.order-product-img{
+        width: 10%;
+        height: 100%;
+        margin: 20px 0px 20px 20px;
+        >img{
+            width: 120px;
+            min-height: 50px;
+            max-height: 18vh;
+        }
+    }
+    >.order-product-detail{
+        margin: 20px;
+        width: 50%;
+        }
+
+    >.order-product-price{
+        margin: 20px;
+        width:10%;
+        
+    }
+    >.order-dispatch-detail{
+        margin: 20px;
+        width: 30%;
+        >h5{
+            font-size: 18px;
+        }
+       
+    }
+}
+
+
+@media (max-width:1250px) and (min-width:1000px) {
+    .order-success{
+        margin: 10px;
+        width: 200px;
+        text-align: center;
+        border-radius: 10px;
+        /* background: ;  */
+        color: rgb(3, 104, 3); 
+        font-size: 16px;  
+    }
+    .order-pro-name{
+        display: -webkit-box;
+                -webkit-line-clamp: 2;
+                height: 45px;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                >h5{
+                    font-size: 18px;
+                }
+    }
+    .my-orders{
+    
+        margin: 30px;
+      
+    
+        
+        >.order-product-img{
+            width: 10%;
+            height: 100%;
+            margin: 10px 0px 10px 10px;
+            >img{
+                width: 100px;
+                min-height: 50px;
+                max-height: 18vh;
+            }
+        }
+        >.order-product-detail{
+            margin: 10px;
+            width: 50%;
+            }
+    
+        >.order-product-price{
+            margin: 10px;
+            width:10%;
+            >h5{
+                font-size: 18px;
+
+            }
+            
+        }
+        >.order-dispatch-detail{
+            margin: 10px;
+            width: 30%;
+            >h5{
+                font-size: 16px;
+            }
+           
+        }
+    }
+}
+@media (max-width:890px) and (min-width:600px) {
+    .search-orders{
+        display: flex;
+        width: 100%;
+        margin: 20px;
+    
+        >input{
+            width: 60vw;
+            height: 8vh;
+            font-size: 18px;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: 1px solid rgb(163, 161, 161);
+            outline: none;
+        }
+        >.order-search-btn{
+            width: 7vw;
+            border-radius: 8px;
+            margin: 0px 3px ;
+            background: linear-gradient(to right, #9fccfa,#0974f1);
+            color: antiquewhite;
+            font-size: 10px;
+        }
+        >.order-search-btn:hover{
+            box-shadow: 2px 2px 2px 2px rgb(124, 209, 248);
+            
+        }
+        
+    }
+}
+@media (max-width:1000px) and (min-width:600px) {
+    .order-success{
+        margin: 5px;
+        width: 100px;
+        font-size: 12px;  
+    }
+    .order-pro-name{
+        display: -webkit-box;
+                -webkit-line-clamp: 2;
+                height: 35px;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                >h5{
+                    font-size: 14px;
+                }
+    }
+    .my-orders{
+    
+        margin: 10px;
+      
+    
+        
+        >.order-product-img{
+            width: 10%;
+            height: 100%;
+            margin: 5px 0px 5px 5px;
+            >img{
+                width: 70px;
+                min-height: 50px;
+                max-height: 18vh;
+            }
+        }
+        >.order-product-detail{
+            margin: 5px;
+            width: 50%;
+            }
+    
+        >.order-product-price{
+            margin: 5px;
+            width:10%;
+            >h5{
+                font-size: 14px;
+
+            }
+            
+        }
+        >.order-dispatch-detail{
+            margin: 5px;
+            width: 30%;
+            >h5{
+                font-size: 12px;
+            }
+           
+        }
+    }
+}
+
+/* Mobile Css */
+@media (max-width:600px) and (min-width:200px){
+    .orders-container{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        width: 73vw;
+        height: 80vh;
+    }
+    .search-orders{
+        display: flex;
+        width: 100%;
+        margin: 20px;
+    
+        >input{
+            width: 70vw;
+            height: 8vh;
+            font-size: 15px;
+            border-radius: 5px;
+            padding-left: 10px;
+            border: 1px solid rgb(163, 161, 161);
+            outline: none;
+        }
+        >.order-search-btn{
+            width: 9vw;
+            border-radius: 8px;
+            margin: 0px 3px ;
+            background: linear-gradient(to right, #9fccfa,#0974f1);
+            color: antiquewhite;
+            font-size: 10px;
+            
+        }
+        >.order-search-btn:hover{
+            box-shadow: 2px 2px 2px 2px rgb(124, 209, 248);
+            
+        }
+        
+    }
+    .order-success{
+        margin: 20px 2px;
+        width: 70px;
+        font-size: 9px; 
+        color: rgb(147, 250, 115); 
+    }
+    .order-pro-name{
+        display: -webkit-box;
+                -webkit-line-clamp: 2;
+                height: 30px;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                >h5{
+                    font-size: 12px;
+                    color: beige;
+                }
+    }
+    .my-orders{
+    
+        margin: 5px;
+      
+    
+        
+        >.order-product-img{
+            width: 10%;
+            height: 100%;
+            margin: 20px 0px 5px 5px;
+            >img{
+                width: 60px;
+                height: 130px;
+         
+            }
+        }
+        >.order-product-detail{
+            margin: 20px 5px;
+            width: 50%;
+
+            }
+    
+        >.order-product-price{
+            margin: 20px 5px;
+            width:10%;
+            >h5{
+                font-size: 14px;
+                color: beige;
+
+            }
+            
+        }
+        >.order-dispatch-detail{
+            margin: 20px 25px;
+            width: 30%;
+            >h5{
+                font-size: 9px;
+                color: beige;
+            }
+           
+        }
+    }
+  }
+  @media (max-width:480px) and (min-width:200px) {
+    .search-orders{
+        display: flex;
+        width: 100%;
+        margin: 10px;
+    
+        >input{
+            width: 80vw;
+            height: 8vh;
+            font-size: 12px;
+            border-radius: 5px;
+            padding-left: 6px;
+            border: 1px solid rgb(163, 161, 161);
+            outline: none;
+        }
+        >.order-search-btn{
+            width: 19vw;
+            border-radius: 8px;
+            margin: 0px 3px ;
+            background: linear-gradient(to right, #9fccfa,#0974f1);
+            color: antiquewhite;
+            font-size: 10px;
+            
+        }
+        >.order-search-btn:hover{
+            box-shadow: 2px 2px 2px 2px rgb(124, 209, 248);
+            
+        }
+        
+    }
+    .order-success{
+        margin: 10px 2px;
+        width: 70px;
+        font-size: 7px; 
+        color: rgb(147, 250, 115); 
+    }
+    .order-pro-name{
+        display: -webkit-box;
+                -webkit-line-clamp: 2;
+                height: 25px;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                >h5{
+                    font-size: 10px;
+                    color: beige;
+                }
+    }
+    .my-orders{
+    
+        margin: 3px;
+      
+    
+        
+        >.order-product-img{
+            width: 10%;
+            height: 100%;
+            margin: 20px 0px 3px 30px;
+            >img{
+                width: 40px;
+                height: 90px;
+         
+            }
+        }
+        >.order-product-detail{
+            margin: 20px 3px;
+            width: 50%;
+
+            }
+    
+        >.order-product-price{
+            margin: 20px 3px;
+            width:10%;
+            >h5{
+                font-size: 12px;
+                color: beige;
+
+            }
+            
+        }
+        >.order-dispatch-detail{
+            margin: 20px 15px;
+            width: 30%;
+            >h5{
+                font-size: 6px;
+                color: beige;
+            }
+           
+        }
+    }
+  }
+  @media (max-width:425px) and (min-width:200px) {
+    .my-orders{
+    
+        margin: 3px;
+      
+    
+        
+        >.order-product-img{
+            width: 10%;
+            height: 100%;
+            margin: 20px 0px 2px 20px;
+            >img{
+                width: 20px;
+                height: 60px;
+         
+            }
+        }
+        >.order-product-detail{
+            margin: 20px 3px;
+            width: 50%;
+
+            }
+    
+        >.order-product-price{
+            margin: 20px 3px;
+            width:10%;
+            >h5{
+                font-size: 12px;
+                color: beige;
+
+            }
+            
+        }
+        >.order-dispatch-detail{
+            margin: 20px 25px;
+            width: 30%;
+            >h5{
+                font-size: 6px;
+                color: beige;
+            }
+           
+        }
+    }
+  }
