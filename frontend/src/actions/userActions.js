@@ -28,7 +28,7 @@ export const login = (email, password) => async (dispatch) => {
               "Content-type": "application/json",
             },
           };
-        const { data }  = await axios.post(`${host}/api/login`,{email,password} , config);
+        const { data }  = await axios.post(`/api/login`,{email,password} , config);
 
         localStorage.setItem("userInfo", JSON.stringify(data));
 
