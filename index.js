@@ -5,6 +5,7 @@ const path = require('path')
 const db = require('./backend/db/connection')
 const errorMiddleware = require('./backend/middlewares/error')
 require('dotenv').config();
+let BASE_URL = process.env.FRONTEND_URL;
 
 // Routes
 const authroute = require("./backend/routes/userRoutes")
@@ -24,7 +25,7 @@ const socket = require("socket.io")
 app.use(cookieParser());
 app.use(express.json())
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: `${BASE_URL}`,
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }));// app.use(bodyParser.urlencoded({ extended: true }));
@@ -34,9 +35,6 @@ app.use('/uploads', express.static(path.join(__dirname,'uploads') ) )
 // db connection
 db()
 
-app.get('/' , (req,res) => {
-    res.send('<h1>welcome to InstaMart server</h1>')
-})
 
 app.use('/api' , authroute )
 app.use('/api' , categoryroute)
@@ -53,9 +51,17 @@ app.get("/api/getkey", (req, res) =>
   res.status(200).json({ key: process.env.RAZORPAY_API_KEY })
 );
 
+if(process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, './frontend/build')));
+  app.get('*', (req, res) =>{
+      res.sendFile(path.resolve(__dirname, './frontend/build/index.html'))
+  })
+}
+
 app.use(errorMiddleware)
 
 const PORT =process.env.PORT || 4005
+
 
 const server = app.listen(PORT, () => {
     console.log(
@@ -67,7 +73,7 @@ const server = app.listen(PORT, () => {
   const io = require("socket.io")(server, {
     pingTimeout: 60000,
     cors: {
-      origin: "http://localhost:3000",
+      origin: `${BASE_URL}`,
       // credentials: true,
     },
   });

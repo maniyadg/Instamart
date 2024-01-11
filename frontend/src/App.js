@@ -48,7 +48,7 @@ function App() {
       
      <Route path='/forget' element={<ForgetPassword/>}/>
     
-     <Route path='/verify/:id' element={<Verify/>}/>
+     <Route path='/reset-password/:id' element={<Verify/>}/>
     
      <Route path='/home' element={<Home/>}/>
      

@@ -13,8 +13,13 @@ const register = async (req, res) => {
 
         let avatar;
 
+        let BASE_URL = process.env.BACKEND_URL;
+        if(process.env.NODE_ENV === "production"){
+            BASE_URL = `${req.protocol}://${req.get('host')}`
+        }
+
         if (req.file) {
-            avatar = `${process.env.BACKEND_URL}/uploads/user/${req.file.originalname}`
+            avatar = `${BASE_URL}/uploads/user/${req.file.originalname}`
         }
 
 
@@ -292,7 +297,13 @@ const forgotPassword = async (req, res) => {
             expiresIn: "5m",
         });
         console.log(token)
-        const link = `http://localhost:3000/reset-password/${user._id}/${token}`;
+
+        let BASE_URL = process.env.FRONTEND_URL;
+        if(process.env.NODE_ENV === "production"){
+            BASE_URL = `${req.protocol}://${req.get('host')}`
+        }
+        
+        const link = `${BASE_URL}/reset-password/${user._id}/${token}`;
         console.log(link);
 
         let transporter = nodemailer.createTransport({
