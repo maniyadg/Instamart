@@ -7,6 +7,8 @@
     "start": "nodemon",
     "dev": "set NODE_ENV=development&&nodemon",
     "prod": "set NODE_ENV=production&&nodemon",
+    "install-client": "cd frontend && npm install",
+    "build-client": "cd frontend && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
