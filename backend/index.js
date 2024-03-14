@@ -51,15 +51,14 @@ app.get("/api/getkey", (req, res) =>
   res.status(200).json({ key: process.env.RAZORPAY_API_KEY })
 );
 
-  app.use(express.static(path.join(__dirname, './frontend/build')));
+  app.use(express.static(path.join(__dirname, "/frontend/build")));
   app.get('*', (req, res) =>{
       res.sendFile(path.resolve(__dirname, "frontend" , "build" , "index.html"))
   })
 
-
 app.use(errorMiddleware)
 
-const PORT =process.env.PORT || 4005
+const PORT =process.env.PORT || 8000
 
 
 const server = app.listen(PORT, () => {
