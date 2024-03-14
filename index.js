@@ -2,22 +2,22 @@ const express = require('express')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const path = require('path')
-const db = require('./backend/db/connection')
-const errorMiddleware = require('./backend/middlewares/error')
+const db = require('./db/connection')
+const errorMiddleware = require('./middlewares/error')
 require('dotenv').config();
 let BASE_URL = process.env.FRONTEND_URL;
 
 // Routes
-const authroute = require("./backend/routes/userRoutes")
-const categoryroute = require('./backend/routes/categoryRoutes')
-const productRoute = require('./backend/routes/postRoutes')
-const cartRoute = require('./backend/routes/cartRoutes')
-const shippingRoute = require('./backend/routes/shippingRoutes')
-const paymentRoute = require('./backend/routes/paymentRoutes')
-const chatRoutes = require('./backend/routes/chatRoutes')
-const messageRoutes = require("./backend/routes/messageRoutes");
-const orderRoutes = require('./backend/routes/orderRoutes')
-const commentRoutes = require('./backend/routes/commentRoutes')
+const authroute = require("./routes/userRoutes")
+const categoryroute = require('./routes/categoryRoutes')
+const productRoute = require('./routes/postRoutes')
+const cartRoute = require('./routes/cartRoutes')
+const shippingRoute = require('./routes/shippingRoutes')
+const paymentRoute = require('./routes/paymentRoutes')
+const chatRoutes = require('./routes/chatRoutes')
+const messageRoutes = require("./routes/messageRoutes");
+const orderRoutes = require('./routes/orderRoutes')
+const commentRoutes = require('./routes/commentRoutes')
 
 const app = express()
 const socket = require("socket.io")
@@ -51,7 +51,7 @@ app.get("/api/getkey", (req, res) =>
   res.status(200).json({ key: process.env.RAZORPAY_API_KEY })
 );
 
-  app.use(express.static(path.join(__dirname, "frontend/build")));
+  app.use(express.static(path.join(__dirname, "/frontend/build")));
   app.get('*', (req, res) =>{
       res.sendFile(path.resolve(__dirname, "frontend" , "build" , "index.html"))
   })
