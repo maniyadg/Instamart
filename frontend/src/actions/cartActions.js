@@ -12,7 +12,7 @@ export const addCartItem = (id, quantity ) => async(dispatch) => {
               Authorization: `Bearer ${user.token}`,
             },
           };
-        const {data } = await axios.post(`${host}/api/create-cart/${id}` , {quantity} , config)
+        const {data } = await axios.post(`/api/create-cart/${id}` , {quantity} , config)
         dispatch(addCartItemSuccess(data))
         console.log(data)
     } catch (error) {
@@ -30,7 +30,7 @@ export const getCartItem = () => async(dispatch) => {
               Authorization: `Bearer ${user.token}`,
             },
           };
-        const {data } = await axios.get(`${host}/api/get-cartItem` , config)
+        const {data } = await axios.get(`/api/get-cartItem` , config)
         dispatch(getCartItemSuccess(data))
         console.log(data)
 
@@ -49,7 +49,7 @@ export const delCartItem = (id) => async(dispatch) => {
               Authorization: `Bearer ${user.token}`,
             },
           };
-        const {data } = await axios.get(`${host}/api/cart-delProduct/${id}` , config)
+        const {data } = await axios.get(`/api/cart-delProduct/${id}` , config)
         dispatch(delCartItemSuccess({data}))
     } catch (error) {
         dispatch(delCartItemFail(error.response.data.message))
