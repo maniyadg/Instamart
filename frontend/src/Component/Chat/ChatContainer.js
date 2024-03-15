@@ -78,7 +78,7 @@ function ChatContainer({ fetchAgain, setFetchAgain, currentChat, chatprofile }) 
 
 
       const { data } = await axios.get(
-        `${host}/api/message/${currentChat._id}`,
+        `/api/message/${currentChat._id}`,
         config
       );
       setMessages(data);
@@ -110,7 +110,7 @@ function ChatContainer({ fetchAgain, setFetchAgain, currentChat, chatprofile }) 
         };
         setMsg("");
         const { data } = await axios.post(
-          `${host}/api/message`,
+          `/api/message`,
           {
             content: msg,
             chatId: currentChat._id,
