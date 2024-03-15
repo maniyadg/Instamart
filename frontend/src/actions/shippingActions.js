@@ -13,7 +13,7 @@ export const getAddress = () => async (dispatch) => {
               Authorization: `Bearer ${user.token}`,
             },
           };
-        const { data }  = await axios.get(`${host}/api/getAddress` , config);
+        const { data }  = await axios.get(`/api/getAddress` , config);
         console.log(data)
         dispatch(getshippingInfoSuccess(data))
     } catch (error) {
@@ -36,7 +36,7 @@ export const createAddress = (name,country,city,address,phoneNo,postalCode) => a
             },
           };
 
-        const  {data}   = await axios.post(`${host}/api/addAddress`,
+        const  {data}   = await axios.post(`/api/addAddress`,
         {name,country,city,address,phoneNo,postalCode} , config);
 
         dispatch(addshippingInfoSuccess(data))
@@ -58,7 +58,7 @@ export const editAddress = (name,country,city,address,phoneNo,postalCode,id) => 
           },
         };
 
-      const  {data}   = await axios.put(`${host}/api/editAddress/${id}`,
+      const  {data}   = await axios.put(`/api/editAddress/${id}`,
       {name,country,city,address,phoneNo,postalCode} , config);
 
       dispatch(editshippingInfoSuccess(data))
@@ -80,7 +80,7 @@ export const deleteAddress = (id) => async (dispatch) => {
           },
         };
 
-      const  {data}   = await axios.put(`${host}/api/deleteAddress/${id}`,config);
+      const  {data}   = await axios.put(`/api/deleteAddress/${id}`,config);
 
       dispatch(delshippingInfoSuccess(data))
   } catch (error) {
