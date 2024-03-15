@@ -25,7 +25,7 @@ export default function FollowData( { _id , followers } ) {
               Authorization: `Bearer ${user.token}`,
             },
           };
-        const {data} = await axios.put(`http://localhost:4000/api/follow/${id}` , config)
+        const {data} = await axios.put(`/api/follow/${id}` , config)
         console.log(data)
     
       }
@@ -37,7 +37,7 @@ export default function FollowData( { _id , followers } ) {
               Authorization: `Bearer ${user.token}`,
             },
           };
-        const {data} = await axios.put(`http://localhost:4000/api/unfollow/${id}` , config)
+        const {data} = await axios.put(`/api/unfollow/${id}` , config)
         console.log(data)
         setFollow(!follow);
       }
