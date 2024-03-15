@@ -25,7 +25,7 @@ export default function Orders() {
         },
       };
 
-      const { data } = await axios.get(`${host}/api/my-orders`, config);
+      const { data } = await axios.get(`/api/my-orders`, config);
 
       setOrderData(data.orders);
       var someDate = new Date(data.orders[0].createdAt);
