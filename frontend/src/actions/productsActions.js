@@ -6,7 +6,7 @@ export const getProducts = (keyword) => async (dispatch) => {
 
     try {  
         dispatch(productsRequest()) 
-        let link = `${host}/api/get-products`
+        let link = `/api/get-products`
         console.log(keyword)
         if(keyword){
             link += `/${keyword}`
@@ -27,7 +27,7 @@ export const createNewProduct  =  (productData) => async (dispatch) => {
 
     try {  
         dispatch(newProductRequest()) 
-        const { data }  =  await axios.post(`${host}/api/create-product`, productData);
+        const { data }  =  await axios.post(`/api/create-product`, productData);
         dispatch(newProductSuccess(data))
 
     } catch (error) {
