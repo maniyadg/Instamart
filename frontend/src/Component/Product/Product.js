@@ -35,7 +35,7 @@ export default function Product() {
       },
     };
     const { data } = await axios.get(
-      `http://localhost:4000/api/get-product/${location.state.p._id}`,
+      `/api/get-product/${location.state.p._id}`,
       config
     );
     console.log(data)
@@ -84,7 +84,7 @@ export default function Product() {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:4000/api/get-comment/${location.state.p._id}`,
+        `/api/get-comment/${location.state.p._id}`,
         config
       );
       setComment(data.comment);
