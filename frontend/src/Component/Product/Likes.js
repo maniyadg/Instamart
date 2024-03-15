@@ -22,7 +22,7 @@ export default function Likes({product}) {
                 Authorization: `Bearer ${user.token}`,
             },
         };
-        const { data } = await axios.put(`http://localhost:4000/api/like/${id}`, config)
+        const { data } = await axios.put(`/api/like/${id}`, config)
         console.log(data)
         setLoadLike(false);
         setIsLike(true)
@@ -42,7 +42,7 @@ export default function Likes({product}) {
                 Authorization: `Bearer ${user.token}`,
             },
         };
-        const { data } = await axios.put(`http://localhost:4000/api/unLike/${id}`, config)
+        const { data } = await axios.put(`/api/unLike/${id}`, config)
         console.log(data)
         setLoadLike(false);
         setIsLike(false)
