@@ -54,7 +54,7 @@ export const register = (userData) => async (dispatch) => {
             }
         }
 
-        const  {data}   = await axios.post(`${host}/api/register`,userData, config ,{withCredentials: true});
+        const  {data}   = await axios.post(`/api/register`,userData, config ,{withCredentials: true});
 
 
         dispatch(registerSuccess(data))
@@ -78,7 +78,7 @@ export const loadUser =  async (dispatch) => {
             },
           };
         
-        const { data }  = await axios.get(`${host}/api/singleuser` , config);
+        const { data }  = await axios.get(`/api/singleuser` , config);
         dispatch(loadUserSuccess(data))
         
     } catch (error) {
@@ -91,7 +91,7 @@ export const loadUser =  async (dispatch) => {
 
     try {
         localStorage.removeItem('userInfo')
-         await axios.get(`${host}/api/logedout`);
+         await axios.get(`/api/logedout`);
          dispatch(logedoutSuccess())
          
      } catch (error) {
@@ -110,7 +110,7 @@ export const loadUser =  async (dispatch) => {
             }
         }
 
-        const { data }  = await axios.put(`${host}/api/updateUser`,userData, config);
+        const { data }  = await axios.put(`/api/updateUser`,userData, config);
         dispatch(updateProfileSuccess(data))
     } catch (error) {
         dispatch(updateProfileFail(error.response))
