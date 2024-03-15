@@ -21,7 +21,7 @@ useEffect(()=>{
 },[params.name])
 
  const getProduct = async()=>{
-  const data = await axios.get(`http://localhost:4000/api/product-category/${params.name}`)
+  const data = await axios.get(`/api/product-category/${params.name}`)
   if(data){
     console.log(data)
     setCategory(data.data.category)
