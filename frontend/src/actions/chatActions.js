@@ -12,7 +12,7 @@ export const accessChat = (token , userId) => async (dispatch) => {
               Authorization: `Bearer ${token}`,
             },
           };
-          const { data } = await axios.post(`${host}/api/chat`, { userId }, config);        
+          const { data } = await axios.post(`/api/chat`, { userId }, config);        
         dispatch(accessChatSuccess(data))
     } catch (error) {
         //handle error
@@ -31,7 +31,7 @@ export const fetchChat = (token , chats) => async (dispatch) => {
               Authorization: `Bearer ${token}`,
             },
           };
-          const { data } = await axios.post(`${host}/api/chat`, config);   
+          const { data } = await axios.post(`/api/chat`, config);   
           chats(data)     
         dispatch(fetchChatSuccess(data))
     } catch (error) {
