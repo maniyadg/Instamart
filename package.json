@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon",
     "dev": "set NODE_ENV=development&&nodemon",
-    "prod": "set NODE_ENV=production && node index.js",
+    "prod": "set NODE_ENV=production && node frontend/index.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
   },
   "type": "module",
