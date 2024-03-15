@@ -19,7 +19,7 @@ function SearchUser({chats , setChats , setCurrentChat , setLoadingChat}) {
         },
       };
 
-      const { data } = await axios.get(`${host}/api/get-users/${keyword}`, config)
+      const { data } = await axios.get(`/api/get-users/${keyword}`, config)
       setUserData(data.user)
       console.log(data)
     } catch (error) {
@@ -38,7 +38,7 @@ function SearchUser({chats , setChats , setCurrentChat , setLoadingChat}) {
           Authorization: `Bearer ${token}`,
         },
       };
-      const { data } = await axios.post(`${host}/api/chat`, { userId }, config);
+      const { data } = await axios.post(`/api/chat`, { userId }, config);
 
       if (!chats.find((c) => c._id === data._id)) setChats([data, ...chats]);
       setCurrentChat(data);
