@@ -24,7 +24,7 @@ export default function Share({ product }) {
           Authorization: `Bearer ${user.token}`,
         },
       }
-      const { data } = await axios.post(`http://localhost:4000/api/create-comment`, { content, postId, postUserId }, config
+      const { data } = await axios.post(`/api/create-comment`, { content, postId, postUserId }, config
       )
       console.log(data)
       setIsOpenComment(false)
