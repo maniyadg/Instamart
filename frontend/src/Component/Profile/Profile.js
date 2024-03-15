@@ -42,7 +42,7 @@ export default function Profile() {
         Authorization: `Bearer ${user.token}`,
       },
     };
-  const {data} = await axios.get('http://localhost:4000/api/myposts' , config)
+  const {data} = await axios.get('/api/myposts' , config)
   if(data){
     setPosts(data.products.length)
     setData(data.products)
